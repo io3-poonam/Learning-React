@@ -1,0 +1,45 @@
+/* navbar-start */
+.navbar {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 0px 0px 20px 2px rgb(196, 222, 249);
+    border-radius: 5px;
+  }
+  ul {
+    width: 80%;
+    margin: 0 auto;
+  }
+  li {
+    display: block;
+    float: left;
+    list-style-type: none;
+    padding: 20px;
+  }
+  li > a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #848f97;
+  }
+  li > a:hover {
+    background-color: rgb(93, 94, 96);
+    color: aliceblue;
+  }
+  ul > a > img {
+    width: 40px;
+    height: 40px;
+    margin-left: 170px;
+    margin-top: 12px;
+  }
+  .bttn {
+    float: right;
+    padding: 10px 25px;
+    margin-right: 25px;
+    margin-top: 10px;
+    background-color: rgb(98, 200, 240);
+    color: azure;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 1px white;
+    font-weight: bolder;
+  }
