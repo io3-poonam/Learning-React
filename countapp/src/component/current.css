@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+}
+.count{
+    background-color: cadetblue;
+    width: 40%;
+    margin: 5% auto;
+    border-radius: 15px;
+}
+h1{
+    text-align: center;
+    padding: 2rem;
+}
+    .btn-1
+    {
+        width: 35%;
+        padding: 6px;
+        margin: 1rem 12rem;
+        border-radius: 5px;
+        border: none;
+        font-size: 20px;
+    }
+    .paraCurrent{
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 20px;
+
+    }
+    p strong{
+        color: rgb(68, 10, 10);
+    }
+    button{
+        padding: 5px;
+        margin: 5px 20px;
+    }

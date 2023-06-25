@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './count.css';
 const CountApp=()=>{
-    const [count,setCount]=useState(100)
+    const [count,setCount]=useState(0) // exp :- (100)
 const handleIncrease=()=>{
     setCount(count + 1)
     console.log("click");

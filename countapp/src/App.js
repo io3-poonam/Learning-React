@@ -1,13 +1,15 @@
 import logo from './logo.svg';
-import CountApp from'./compoment/count';
-import Count2 from './compoment/count2';
+import CountApp from'./component/count';
+import NameValue from './component/name';
+import CurrentDate from'./component/currentDate';
 
 import './App.css';
 
 function App() {
   return <>
   <CountApp/>
-  <Count2/>
+  <NameValue/>
+  <CurrentDate/>
   </>
 }
 
