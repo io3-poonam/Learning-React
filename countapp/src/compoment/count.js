@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './count.css';
 const CountApp=()=>{
-    const [count,setCount]=useState(0)
+    const [count,setCount]=useState(100)
 const handleIncrease=()=>{
     setCount(count + 1)
     console.log("click");
@@ -23,11 +23,10 @@ setCount(count+5)
  }
 // -----5 Less---------
 const handleFiveLess=()=>{
-    if(count<=0){
-        setCount(0)
+    if(count<=5){
+        setCount(count)
     }
     else{
-
         setCount(count-5)
     }
 }
@@ -37,8 +36,8 @@ const handleFiveLess=()=>{
     }
     // --------------25 add--------
     const handleTwentyFiveLess=()=>{
-        if(count<=0){
-            setCount(0)
+        if(count<=25){
+            setCount(count)
         }
         else{
     
@@ -51,8 +50,8 @@ const handleFiveLess=()=>{
         }
 // -------100 less---------
 const handleHundredLess=()=>{
-    if(count<=0){
-        setCount(0)
+    if(count<=100){
+        setCount(count)
     }
     else{
 
