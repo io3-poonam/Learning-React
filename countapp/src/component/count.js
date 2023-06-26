@@ -23,7 +23,7 @@ setCount(count+5)
  }
 // -----5 Less---------
 const handleFiveLess=()=>{
-    if(count<=5){
+    if(count < 5){
         setCount(count)
     }
     else{
@@ -36,7 +36,7 @@ const handleFiveLess=()=>{
     }
     // --------------25 add--------
     const handleTwentyFiveLess=()=>{
-        if(count<=25){
+        if(count< 25){
             setCount(count)
         }
         else{
@@ -50,7 +50,7 @@ const handleFiveLess=()=>{
         }
 // -------100 less---------
 const handleHundredLess=()=>{
-    if(count<=100){
+    if(count< 100){
         setCount(count)
     }
     else{
