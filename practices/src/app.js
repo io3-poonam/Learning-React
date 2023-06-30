@@ -6,19 +6,26 @@ import './Cards.css';
 
 console.log('cards',CardData)
 
+
 const App=()=>{
  return(
     <>
     <Calc/>
     <h1 className="heading_style">All ludhiana College List</h1>
+{CardData.map((cardValue,index)=>{
+   console.log(index)
+   return( <Cards 
+      key={cardValue.id}
+      imgSrc={cardValue.imgSrc}
+      title={cardValue.title}
+       Address={cardValue.Address}
+       number={cardValue.number}
+       links={cardValue.links}/>
+     );
+})
 
-    <Cards 
-    imgSrc={CardData[0].imgSrc}
-    title={CardData[0].title}
-     Address={CardData[0].Address}
-     number={CardData[0].number}
-     links={CardData[0].links}/>
-     <Cards 
+}
+     {/* <Cards 
     imgSrc={CardData[1].imgSrc}
     title={CardData[1].title}
      Address={CardData[1].Address}
@@ -47,7 +54,7 @@ const App=()=>{
     title={CardData[5].title}
      Address={CardData[5].Address}
      number={CardData[5].number}
-     links={CardData[5].links}/>
+     links={CardData[5].links}/> */}
     </>
  )
 }
