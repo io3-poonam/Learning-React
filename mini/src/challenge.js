@@ -1,6 +1,6 @@
 import React from "react";
 import './challenge.css';
-const Challenge_1=()=>{
+const Challenge=()=>{
     let currDate=new Date(2023,5,5,15).getHours();
     // currDate=currDate.getHours();
     let greeting="";
@@ -32,4 +32,4 @@ let Heading={}
     <h1 className="Heading" style={Heading}> <strong style={{color:"GrayText"}}>Hello Sir</strong>, {greeting} </h1>
     </div></>)
 }
-export default Challenge_1
+export default Challenge;
