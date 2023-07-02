@@ -3,11 +3,11 @@ const Game=()=>{
     let x='😀 ' ;
     let y='😀';
     let z='😂';
-    let a='🥹';
-    let b=' 🥶';
-    let c='🥹';
-    let d=' 🤬';
-    let e='😇';
+    // let a='🥹';
+    // let b=' 🥶';
+    // let c='🥹';
+    // let d=' 🤬';
+    // let e='😇';
 if((x===y && y===z && x===z)){
     return (<>
      {/* <div className="container" style={{border:'1px solid black', width:'30%', height:"50vh", margin:'auto', boxShadow:'2px 6px 12px  gray'}}> */}

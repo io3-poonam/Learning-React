@@ -15,3 +15,15 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+
+
+// check self
+ // babel and webpack
+// var react = require('react'); // import React from 'react';
+
+
+// var reactDOM = require('react-dom'); // import ReactDom from 'react-dom';
+// reactDOM.render(<h1>Hello World !!</h1>, document.getElementById('root'))
+// jsx
