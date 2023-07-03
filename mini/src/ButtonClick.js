@@ -19,7 +19,7 @@ const Button=()=>{
     }
 return(<>
 <div className="btn-Class">
-<h1 className="btnHeading">{count}</h1>
+<h1 className="btnHeading">Count : {count}</h1>
 <button onClick={incBtn} className="btnBtn">Addition</button>
 <button onClick={decBtn} className="btnBtn">Subtraction</button>
 <button onClick={cleBtn} className="btnBtn">Clear Data</button>

@@ -1,7 +1,7 @@
 import React from "react";
 import './challenge.css';
 const Challenge=()=>{
-    let currDate=new Date(2023,5,5,15).getHours();
+    let currDate=new Date().getHours();
     // currDate=currDate.getHours();
     let greeting="";
 let displayBackground={}
