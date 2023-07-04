@@ -2,23 +2,47 @@ import React, { useState } from "react";
 import "./forms.css"
 const Forms=()=>{
     // const name='Blank'
-    const [addName, setAddName]=useState('')
-    const [enterName,setEnterName]=useState()
+    const [fullName, setFullName]=useState({
+        fName:"",
+        lName:"",
+    })
+    // const [nameNew, setNameNew]=useState('')
+
+    // const [enterName,setEnterName]=useState()
+    // const [enterNameNew,setEnterNameNew]=useState()
+
     const onChange=(onChangeInput)=>{
-        setAddName(onChangeInput.target.value)        
+        setFullName(onChangeInput.target.value)        
         console.log(onChangeInput.target.value)
     }
-    const onClick=()=>{
-        setEnterName(addName)
+    // const onChangeNew=(onChangeInput)=>{
+    //     setNameNew(onChangeInput.target.value)        
+    //     console.log(onChangeInput.target.value)
+    // }
+    const onSubmit=(event)=>{
+        event.preventDefault();
+        // setEnterName(name)
+        // setEnterNameNew(nameNew)
     }
    
     return(<>
     <div className="dis-Background">
-<h1 className="Heading-1">Hello, {enterName}</h1>
+        <form onSubmit={onSubmit}>
+<h1 className="Heading-1">Hello, {fullName}</h1>
    <input type="text" 
+   name="fName"
    placeholder="Enter Your Name"
-    onChange={onChange} value={addName} />
-   <button className="BtnCSS" onClick={onClick}>Click</button>
+    onChange={onChange} value={fullName.fName} />
+    <br/>
+    <input type="text" 
+    name="lName"
+   placeholder="Enter the Password"
+   onChange={onChange} value={fullName.lName} />
+
+    <br/>
+
+   <button className="BtnCSS" >Submit</button>
+   </form>
     </div>
     </>)
 }
