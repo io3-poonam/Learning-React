@@ -25,6 +25,19 @@ position: relative;
 top: 50%;
  border: 1px solid;
 padding: 1rem;
-border-radius: 1rem;
+border-top-left-radius: 2rem;
+     border-top-right-radius: 0rem;
+     border-bottom-left-radius: 0rem;
+     border-bottom-right-radius: 2rem;
  background-color: #d4c7c7;
+}
+.Heading:hover{
+    width: 55%;
+    font-size: 3.5rem;
+    text-shadow: 1px 3px 15px rgba(116, 188, 222, 0.8);
+    color: rgba(42, 3, 91, 0.733);
+     border: 1px dotted palevioletred;
+     background-color: #bfeae9; 
+border-radius: 2rem;
+     
 }

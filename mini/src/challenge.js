@@ -13,9 +13,15 @@ let Heading={}
         // console.log('greeting', greeting);
         
     }
-    else if(currDate >= 12 && currDate < 19){
+    else if(currDate >= 12 && currDate < 15){
         greeting="Good Afternoon"
         displayBackground.backgroundColor='yellow'
+
+        // console.log('go', greeting)
+    }
+    else if(currDate >= 15 && currDate < 20){
+        greeting="Good Evening"
+        displayBackground.backgroundColor='yellowgreen'
 
         // console.log('go', greeting)
     }
