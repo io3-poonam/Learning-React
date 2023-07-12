@@ -10,18 +10,21 @@ let Heading={}
     {
         greeting="Good Morning";
         displayBackground.backgroundColor='orange'
+        Heading.color='red'
         // console.log('greeting', greeting);
         
     }
-    else if(currDate >= 12 && currDate < 15){
+    else if(currDate >= 12 && currDate < 16){
         greeting="Good Afternoon"
         displayBackground.backgroundColor='yellow'
+        Heading.color='purple'
 
         // console.log('go', greeting)
     }
-    else if(currDate >= 15 && currDate < 20){
+    else if(currDate >= 16 && currDate < 20){
         greeting="Good Evening"
         displayBackground.backgroundColor='yellowgreen'
+        Heading.color='green'
 
         // console.log('go', greeting)
     }
@@ -35,7 +38,7 @@ let Heading={}
     }
     return(<>
     <div className="display-Background" style={displayBackground}>
-    <h1 className="Heading" style={Heading}> <strong style={{color:"GrayText"}}>Hello Sir</strong>, {greeting} </h1>
+    <h1 className="Heading" style={Heading}> <strong style={{color:"GrayText"}}>Hello Sir ,</strong> {greeting} </h1>
     </div></>)
 }
 export default Challenge;

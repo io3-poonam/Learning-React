@@ -5,9 +5,12 @@ import Button from './ButtonClick';
 import Clock from './clock';
 import Events from './Events';
 import Forms from './forms';
+import Shopping from './shopping';
+
 import './game.css';
 function App() {
   return (<>
+  <Shopping/>
   <Forms/>
   <Events/>
     <Button/>
