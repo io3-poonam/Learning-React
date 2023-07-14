@@ -29,3 +29,21 @@
 
     color: crimson;
 }
+@media (max-width:768px){
+  .container{
+    width: 55%;
+  }
+  .todo_style .btn{
+    margin: 0 15px 0 15px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button{
+    margin-left: 5px;
+    min-height: 40px;
+    width: 40px;
+    color: #fff;
+    font-size: 30px;
+  }
+}

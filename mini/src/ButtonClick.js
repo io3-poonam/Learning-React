@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import './btn.css'
-// const count=0;
+import "./btn.css";
+const count=0;
 const Button=()=>{
     const[count,setCount]=useState(0)
     const incBtn=()=>{
@@ -27,4 +27,41 @@ return(<>
 </div>
 </>)
 }
+// import AddIcon from '@mui/icons-material/Add';
+// const countValue=0
+// const Button = () => {
+//     const[countValue,setCountValue]=useState(0)
+//     const add=()=>{
+// console.log('gj')
+// setCountValue(countValue+1)
+//     }
+//     const less=()=>{
+//         if(countValue<=0)
+// setCountValue(0)
+// else{
+// setCountValue(countValue-1)
+
+// }
+
+// console.log('gj')
+        
+//     } 
+//      const clear=()=>{
+// setCountValue(0)
+
+// console.log('gj')
+        
+//     }
+//   return <>
+//   <div className="btn-Class">
+//     <h1 className="btnHeading">count :{countValue}</h1>
+//     <button onClick={add} className="btnBtn">
+//        + {/* <AddIcon/> */}
+//     </button>
+//     <button onClick={less} className="btnBtn">-</button>
+//     <button onClick={clear} className="btnBtn">c</button>
+//     </div></>;
+// };
+
+
 export default Button;
