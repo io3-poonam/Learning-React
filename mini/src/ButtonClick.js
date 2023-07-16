@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./btn.css";
+import AddIcon from '@mui/icons-material/Add';
 const count=0;
 const Button=()=>{
     const[count,setCount]=useState(0)
@@ -20,7 +21,9 @@ const Button=()=>{
 return(<>
 <div className="btn-Class">
 <h1 className="btnHeading">Count : {count}</h1>
-<button onClick={incBtn} className="btnBtn">Addition</button>
+<button onClick={incBtn} className="btnBtn">
+     <AddIcon/>
+    Addition</button>
 <button onClick={decBtn} className="btnBtn">Subtraction</button>
 <button onClick={cleBtn} className="btnBtn">Clear Data</button>
 

@@ -13,13 +13,13 @@ const Clock=()=>{
     }
 
     const UpdateTime=()=>{
-        console.log('clock')
+        // console.log('clock')// check click
  newTime=new Date(). toLocaleTimeString()
 
         setCurrTime(newTime)
     }
     // automative run setInterval events
-// setInterval(UpdateTime,1000) 
+setInterval(UpdateTime,1000) 
 
     return(<>
     <div className="clockButton">
@@ -28,7 +28,7 @@ const Clock=()=>{
     </div>
     <div className="clockButtonDigital">
     <h2 className="clockHeadingDigital">{CurrTime}</h2>
-    {/* <button className="clockBtn" onClick={UpdateTime}>Get Time</button> */}
+    <button className="clockBtn" onClick={UpdateTime}>Get Time</button>
 
     </div>
     </>)
