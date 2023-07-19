@@ -42,11 +42,11 @@
   outline: none;
 }
 .button {
-  width: 40px;
+  /* width: 40px; */
   font-size: 35px;
   font-weight: 700;
   margin-left: 10px;
-  min-height: 40px;
+  /* min-height: 40px; */
   border-color: transparent;
   border-radius: 50%;
   color: #fff;

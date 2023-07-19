@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./shopping.css";
+import AddIcon from '@mui/icons-material/Add';
+
 import List from "./list";
 const Shopping = () => {
   const [inputItems, setInputItems] = useState("");
@@ -14,24 +16,24 @@ const Shopping = () => {
     });
     setInputItems("");
   };
-  const HandleDelete=(id)=>{
-    setNewList((oldItems)=>{
-      return(
-        oldItems.filter((arr,i)=>{
-          return i !== id
-        })
-      )
-    })
-    console.log('n')
-  }
   // const HandleDelete=(id)=>{
-  //   // console.log('hhh')
-  //   setNewList((oldItems=>{
-  //     return(oldItems.filter((arrId,i)=>{
-  //       return i !== id
-  //     }))
-  //   })) 
+  //   setNewList((oldItems)=>{
+  //     return(
+  //       oldItems.filter((arr,i)=>{
+  //         return i !== id
+  //       })
+  //     )
+  //   })
+  //   console.log('n')
   // }
+  const HandleDelete=(id)=>{
+    // console.log('hhh')
+    setNewList((oldItems=>{
+      return(oldItems.filter((arrId,i)=>{
+        return i !== id
+      }))
+    })) 
+  }
   return (
     <>
       <div className="main-div">
@@ -44,16 +46,21 @@ const Shopping = () => {
             value={inputItems}
             onChange={handleChangeEventListItems}
           />
-          <button onClick={handleClickButtonList} className="button"> + </button>
+          <AddIcon onClick={handleClickButtonList} className="button"/>
+          {/* <button onClick={handleClickButtonList} className="button"> + </button> */}
           <ul className="order_list">
-            {newList.map((list,i) => {
-              return <List 
-              key={i} 
-              id={i} 
-              text={list} 
-              onSelect={HandleDelete}
-               />;
-            })}
+            {newList.map((list, i) => {
+              return<List text={list}
+              key={i}
+              id={i}
+              // <List 
+              // key={i} 
+              // id={i} 
+              // text={list} 
+              onSelect={HandleDelete}/>
+              //  />;
+            })
+            }
           </ul>
         </div>
       </div>

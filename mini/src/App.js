@@ -1,4 +1,6 @@
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import Accordion from"./component/Accordion/Accordion"
 import Challenge from './Challenge';
 import Button from './ButtonClick';
 import Game from './Game';
@@ -6,10 +8,12 @@ import Clock from './clock';
 import Events from './Events';
 import Forms from './forms';
 import Shopping from './shopping';
-
+import Bootstrap from './bootstrap'
 import './game.css';
 function App() {
   return (<>
+  <Accordion/>
+  <Bootstrap/>
     <Button/>
   <Shopping/>
   <Forms/>

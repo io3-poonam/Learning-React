@@ -1,25 +1,30 @@
-import React from "react";
-import './list.css';
+import React, { useState } from "react";
+import "./list.css";
 // import AddIcon from '@mui/icons-material/Add';
 // import ClearOutlinedIcon from '@mui/icons-material/ClearOutlined';
 import DeleteIcon from '@mui/icons-material/Delete';
 // import FontAwesomeIcon from "./FontAwesomeIcon"
-const List=(props)=>{
-    
-    return<>
-    <div className="todo_style">
-    {/* <FontAwesomeIcon icon={faCircleXmark} /> */}
-    {/* <FontAwesomeIcon icon="fa-solid fa-circle-xmark" /> */}
-    {/* <svg xmlns="http://www.w3.org/2000/svg" height="1em" className="btn" viewBox="0 0 512 512" */}
-    {/* {()=>{props.onSelect(props.id)}} */}
-    {/* //  onClick={()=>{props.onSelect(props.id)}} */}
-    {/* > */}
-     <DeleteIcon className="btn"  onClick={()=>{props.onSelect(props.id)}}
-    />
+// const List=(props)=>{
 
-                {/* <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg> */}
-        {/* <span className="btn">x</span> */}
-    <li className="list_items">{props.text}</li>
-    </div> </>
-}
-export  default List ;
+// return<>
+// <div className="todo_style">
+//  <DeleteIcon className="btn"  onClick={()=>{props.onSelect(props.id)}}
+// />
+// <li className="list_items">{props.text}</li>
+// </div> </>
+// }
+const List = (props) => {
+  const [line,setLine]=useState(false)
+  const clickList=()=>{
+setLine(true)
+  }
+  return (
+    <>
+      <div className="todo_style">
+        <DeleteIcon className="btn" onClick={clickList}/>
+        <li className="list_items" style={{textDecoration:line?"line-through":'none'}}>{props.text}</li>
+      </div>
+    </>
+  );
+};
+export default List;
