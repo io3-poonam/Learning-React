@@ -6,8 +6,8 @@ const Accordion=()=>{
     const [data, setData]=useState(question);
     return(
         <>
-        <section className=" main-container">
-            {/* <div className=" main-container"> */}
+        <section >
+            <div className=" main-container">
                 {/* <div> */}
         <h1>Interview Question</h1>
          {data.map((curElem)=>{
@@ -15,7 +15,7 @@ const Accordion=()=>{
          return <MyAccordion key={curElem.id} {...curElem}/> 
      })}
      {/* </div> */}
-     {/* </div> */}
+     </div>
      </section>
     </>)
 }

@@ -13,12 +13,12 @@ function App() {
   return (
     <div>
       <Accordion/>
-      {/* <Shopping/> */}
-     {/* <Count/> */}
-     {/* <Challenge/> */}
-     {/* <Home /> */}
-     {/* <SubPart /> */}
-     {/* <Footer/> */}
+      <Shopping/>
+     <Count/>
+     <Challenge/>
+     <Home />
+     <SubPart />
+     <Footer/>
     </div>
   );
 }
