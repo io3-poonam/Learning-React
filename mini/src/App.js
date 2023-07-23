@@ -8,15 +8,12 @@ import Events from './Events';
 import Forms from './forms';
 import Shopping from './shopping';
 import Bootstrap from './bootstrap'
-// import Accordion from './Accordion'
-// import Accordion from"./component/Accordion/Accordion"
 
 import './game.css';
 function App() {
   return (<>
-  <Shopping/>
-  {/* <Accordion/> */}
   <Bootstrap/>
+  <Shopping/>
     <Button/>
   <Forms/>
   <Events/>

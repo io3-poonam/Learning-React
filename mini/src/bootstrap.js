@@ -1,3 +1,4 @@
+import { textAlign } from "@mui/system";
 import React from "react";
 const Bootstrap=()=>{
     return<>
@@ -13,9 +14,55 @@ const Bootstrap=()=>{
     How to Install and Use Bootstrap 5 in React JS #47
     React Bootstrap Autocomplete Extension in VS Code 
     </h1>
-  {/* <img src="https://static9.depositphotos.com/1074452/1184/i/950/depositphotos_11843630-stock-photo-jpg-key-shows-image-format.jpg" className="rounded float-start" width="100" height="100" alt="..."/>
+    <div className="container">
+  <div className="row">
+    <div className="col">
+      <div className="card" 
+      // style={{width: "10rem ",height:"10rem"}}
+      >
+  <img src="https://picsum.photos/201/300" className="card-img-top" alt="..." 
+  height="250px" width="150px"/>
+  <div className="card-body" style={{textAlign:"center"}}>
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" className="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
+    <div className="col">
+      <div className="card" 
+      // style={{width: "6rem ",height:"5rem"}}
+      // style={{width: "18rem;"}}
+      >
+  <img src="https://picsum.photos/200/310" className="card-img-top" alt="..." 
+  height="250px" width="150px"/>
+  <div className="card-body "style={{textAlign:"center"}}>
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" className="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
+    <div className="col">
+      <div className="card" 
+      // style={{width: "6rem ",height:"5rem"}}
+      // style={{width: "18rem;"}}
+      >
+  <img src="https://picsum.photos/210/300" className="card-img-top" alt="..." 
+  height="250px" width="150px"/>
+  <div className="card-body"style={{textAlign:"center"}}>
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" className="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+  {/* <img src="https://static9.depositphotos.com/1074452/1184/i/950/depositphotos_11843630-stock-photo-jpg-key-shows-image-format.jpg" className="rounded float-start" width="100" height="100" alt="..."/
+  height="250px" width="150px">
 // <img src="https://static9.depositphotos.com/1074452/1184/i/950/depositphotos_11843630-stock-photo-jpg-key-shows-image-format.jpg" className="rounded float-end" alt="..." width="100" height="100"/><br></br> */}
-{/* // <div class="form-check">
+{/* // <div className="form-check">
 //   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
 //   <label class="form-check-label" for="flexRadioDefault1">
 //     Default radio

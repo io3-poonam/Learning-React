@@ -37,7 +37,7 @@ const Shopping = () => {
   return (
     <>
       <div className="main-div">
-        <div className="container">
+        <div className="container-1">
           <h1 className="heading_Shopping">ToDo Buy</h1>
           <input
             className="input"
