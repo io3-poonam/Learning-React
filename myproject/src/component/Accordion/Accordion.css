@@ -5,11 +5,12 @@
   }
   
    section {
-    width: 100%;
+margin: 50% auto;
+    width: 50%;
     height: 100vh;
     background-color: rgb(116, 163, 204);
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     /* align-items: center; */
     background-image: linear-gradient(#fcf5f5, #eff4fd);
   } 
@@ -23,7 +24,7 @@
       rgba(17, 17, 26, 0.1) 0px 8px 8px;
   }
    
-   h1 {
+   .h1 {
     text-align: center;
     font-family: "Bitter", serif;
     text-transform: capitalize;

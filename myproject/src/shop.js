@@ -40,7 +40,7 @@ const Shopping = () => {
         <div className="container-1">
           <h1 className="heading_Shopping">ToDo Buy</h1>
           <input
-            className="input"
+            id="input1"
             type="text"
             placeholder="Add to items"
             value={inputItems}

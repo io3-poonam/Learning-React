@@ -9,7 +9,7 @@ const Accordion=()=>{
         <section >
             <div className=" main-container">
                 {/* <div> */}
-        <h1>Interview Question</h1>
+        <h1 className="h1">Interview Question</h1>
          {data.map((curElem)=>{
             // const{id}=curElem
          return <MyAccordion key={curElem.id} {...curElem}/> 
