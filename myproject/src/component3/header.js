@@ -1,7 +1,7 @@
 import React from "react";
 import './style.css'
 import logo from"./image/images.png"
-const HeaderAPP=()=>{
+const Header=()=>{
     return(<>
     <div className="header-1">
         <img src={logo} alt="google keep" width={70} height={60}/>
@@ -9,4 +9,4 @@ const HeaderAPP=()=>{
     </div>
     </>)
 }
-export default HeaderAPP;
+export default Header;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './style.css'
-const CreateNote=(props)=>{
+const CreateNoteAPP=(props)=>{
 const[note,setNote]=useState({
     title:"",content:""
 });
@@ -25,4 +25,4 @@ const HandleBtnClick=()=>{
     </div>
     </>)
 }
-export default CreateNote;
+export default CreateNoteAPP;

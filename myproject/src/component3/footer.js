@@ -1,5 +1,5 @@
 import React from "react";
-const FooterAPP=()=>{
+const Footer=()=>{
     const year =new Date() .getFullYear();
     return(<>
     <div className="footer">
@@ -8,4 +8,4 @@ const FooterAPP=()=>{
 </div>
     </>)
 }
-export default FooterAPP;
+export default Footer;
