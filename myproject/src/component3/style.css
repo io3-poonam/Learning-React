@@ -55,51 +55,57 @@ input{
   font-size: 1rem;
   margin: 10px 0;
 }
-.main_note .plus-sign{
+/* .MuiButton-root .plus-sign{
     position: relative;
     float: right;
-    margin-right: 10px;
-    border: none;
     width: 50px;
-   color:#f4b400 ;
+    color:#f4b400 ;
     height: 50px;
     background: white;
+    border: none;
+    margin-right: 10px;
     cursor: pointer;
     outline: none;
     border-radius: 50%;
   
-  }
-/* .MuiButton-root{
+  } */
+ .MuiButton-root{
 width: 30px;
 height: 50px;
 position: absolute;
 bottom: -28px;
 left: 400px;
 cursor: pointer;
+border: none;
+    cursor: pointer;
+    outline: none;
 background-color: #fff !important;
 border-radius: 50% !important;
 }
 .MuiButton-root .plus-sign{
-  font-size: 45px !important;
-  font-weight: 900;
-  color: #f4b000;
+  font-size: 30px !important;
+  font-weight: 900 !important;
+  color: #e9c978;
   cursor: pointer;
   z-index: 222;
   background: transparent;
-} */
+  
+}  
 /* .MuiButton-root:hover{
   background-color: #f4b400;
-} */
-.main_note .plus-sign:hover{
+}  */
+/* .main_note .plus-sign:hover{
     background-color: #f5ba13;
-  }
-  .main_note .plus-sign:hover {
+  } */
+  /* .main_note .plus-sign:hover {
     color: #fff;
-  }
-/* .MuiButton-root:hover .plus-sign{
-  color: #fff;
-  background: transparent;
-} */
+  } */
+ .MuiButton-root .plus-sign:hover {
+  color: #ebeef0;
+  background: #f4b400;
+border-radius: 50% !important;
+
+} 
 .note{
   background: #fff;
   border-radius: 7px;
