@@ -1,10 +1,11 @@
-import React from "react";
+import React, { createContext } from "react";
 import Cards from "./Cards";
 import Calc from "./calc"
 import CardData from"./CardData";
 import './Cards.css';
 import CollegeMix from "./CollegeMix";
 import OtherCollege from "./OtherCollege";
+import CompA from "./component/CompA";
 console.log('cards',CardData)
 // if else condition
 const favSeries="netflix";
@@ -19,9 +20,18 @@ const favSeries="netflix";
 //    }
 // }
 
+const FirstName=createContext();
+const LastName=createContext();
+
 const App=()=>{
  return(
     <>
+    <FirstName.Provider value={'Poonam'}>
+      <LastName.Provider value={'Maurya'}>
+    <CompA/>
+    </LastName.Provider>
+    </FirstName.Provider>
+   
     <Calc/>
     <h1 className="heading_style">All ludhiana College List</h1>
     {/* <FavS/> */}
@@ -46,3 +56,5 @@ const App=()=>{
  )
 }
 export default App;
+export {FirstName, LastName};
+
