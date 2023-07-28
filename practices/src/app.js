@@ -1,15 +1,16 @@
 import React, { createContext } from "react";
-import Cards from "./Cards";
-import Calc from "./calc"
-import CardData from"./CardData";
-import './Cards.css';
-import CollegeMix from "./CollegeMix";
-import OtherCollege from "./OtherCollege";
-import UseEffect from"./componentuseEffect/useEffect";
-import CompA from "./component/CompA";
-console.log('cards',CardData)
+// import Cards from "./Cards";
+// import Calc from "./calc"
+// import CardData from"./CardData";
+import Details from"./liveProject/liveProject"
+// import './Cards.css';
+// import CollegeMix from "./CollegeMix";
+// import OtherCollege from "./OtherCollege";
+// import UseEffect from"./componentuseEffect/useEffect";
+// import CompA from "./component/CompA";
+// console.log('cards',CardData)
 // if else condition
-const favSeries="netflix";
+// const favSeries="netflix";
 
 // const FavS=()=>{
 //    if(favSeries==="netflix"){
@@ -21,26 +22,27 @@ const favSeries="netflix";
 //    }
 // }
 
-const FirstName=createContext();
-const LastName=createContext();
+// const FirstName=createContext();
+// const LastName=createContext();
 const App=()=>{
  return(
     <>
-    <UseEffect/>
-    <FirstName.Provider value="Poonam">
-    <LastName.Provider value="Maurya">
+    <Details/>
+    {/* <UseEffect/> */}
+    {/* <FirstName.Provider value="Poonam"> */}
+    {/* <LastName.Provider value="Maurya"> */}
 
-    <CompA/>
-    </LastName.Provider>
-    </FirstName.Provider>
+    {/* <CompA/> */}
+    {/* </LastName.Provider> */}
+    {/* </FirstName.Provider> */}
 
-    <Calc/>
-    <h1 className="heading_style">All ludhiana College List</h1>
+    {/* <Calc/> */}
+    {/* <h1 className="heading_style">All ludhiana College List</h1> */}
     {/* <FavS/> */}
     {/* this is map method */}
- {CardData.map((cardValue,index)=>{
-   console.log(index)
-   return( <Cards 
+ {/* {CardData.map((cardValue,index)=>{ */}
+   {/* console.log(index) */}
+   {/* return( <Cards 
       key={cardValue.id}
       imgSrc={cardValue.imgSrc}
       title={cardValue.title}
@@ -50,7 +52,7 @@ const App=()=>{
      );
 })
 
-} 
+}  */}
 {/* ternary opertor */}
 {/* {(favSeries==='netflix'?<OtherCollege/>:<CollegeMix/>)} */}
      
@@ -58,4 +60,4 @@ const App=()=>{
  )
 }
 export default App;
-export{FirstName,LastName};
+// export{FirstName,LastName};

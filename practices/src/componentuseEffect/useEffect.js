@@ -11,7 +11,8 @@ const UseEffect=()=>{
         setNumb(numb+1)
     }
     useEffect(()=>{
-        alert('click')
+        // alert('click')
+        document.title=`you times number is ${num}`
         ;
     },[num],[])
     return(<>
