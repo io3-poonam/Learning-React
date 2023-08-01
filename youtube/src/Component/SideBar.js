@@ -28,6 +28,8 @@ import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import OutlinedFlagOutlinedIcon from "@mui/icons-material/OutlinedFlagOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import FeedbackOutlinedIcon from "@mui/icons-material/FeedbackOutlined";
+import Accord from "./accordion";
+
 const SideBar = () => {
   return (
     <>
@@ -75,6 +77,12 @@ const SideBar = () => {
               <a href="#" className="nav-item">
                 <ThumbUpOutlinedIcon className="ytb-color-icon" />
                 <li className="nav-icon">Likes video</li>
+              </a>
+              <a href="#" className="nav-item">
+                <li className="nav-icon">
+   <Accord/>
+
+                </li>
               </a>
             </div>
             <p className="border-bottom"></p>
