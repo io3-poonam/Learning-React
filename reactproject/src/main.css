@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+.Items{
+    display: flex;
+    list-style-type: none;
+    border: 1px solid black;
+    width: 100%;
+    background-color: aliceblue;
+}
+.nav-Items{
+    padding: 0.5rem;
+    cursor: pointer;
+    margin: 0.5rem;
+    border-radius: 2rem;
+    background-color: powderblue;
+}

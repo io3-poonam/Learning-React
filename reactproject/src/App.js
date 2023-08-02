@@ -1,23 +1,28 @@
+import { BrowserRouter,Routes,Route } from "react-router-dom";
 import React from "react";
-import {Route,Switch } from "react-router-dom";
-import About from "./about";
-import Contact from "./contact";
+import Main from "./main";
+import Count from "./component/Count/Count";
+import Clock from "./component/Clock/Clock";
+import Shopping from"./component/Todo List/Shopping";
+import Forms from"./component/form/form"
+import Events from"./component/EventChange/Event"
+
 import Error from "./Error";
 const App=()=> {
-  const Name=()=>{
-    return  <h1>Hello, My name Poonam</h1>
-  }
+  
   return (
     <>
-    <Switch>
-      <Route exact path='/' component={About}/>
-      <Route exact path="/contact" component={Contact}/>
-      <Route path="/contact/name" component={Name}/>
-
-      <Route component={Error}/>
-    </Switch>
-    {/* <About/>
-    <Contact/> */}
+<BrowserRouter>
+<Routes>
+      <Route  path='/'  element={<Main />}></Route>
+      <Route  path="/count" element={<Count />}></Route>
+      <Route  path="/todo" element={<Shopping />}></Route>
+      <Route  path="/form" element={<Forms />}></Route>
+      <Route path="/Clock" element={<Clock/>}></Route>
+      <Route path="/event" element={<Events/>}></Route>
+      
+      </Routes>
+    </BrowserRouter>
     </>
   );
 }
