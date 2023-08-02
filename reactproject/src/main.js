@@ -19,7 +19,12 @@ const Main = () => {
   const NavigateEventPage = () => {
     navigate("/event");
   };
-  
+   const NavigateToTimeOfDayPage=()=>{
+    navigate("timeOfDay")
+   }
+   const NavigateToGamePage=()=>{
+    navigate("game")
+   }
   return (
     <>
       <div className="">
@@ -35,8 +40,8 @@ const Main = () => {
           <li onClick={NavigateToClockPage} className="nav-Items">
             Clock
           </li>
-          <li className="nav-Items">Game if else function</li>
-          <li className="nav-Items">Time According changes</li>
+          <li onClick={NavigateToGamePage}  className="nav-Items">Game if else function</li>
+          <li onClick={NavigateToTimeOfDayPage} className="nav-Items">Time According changes if else func</li>
         </ul>
         <button>Navigate to contact page</button>
         <button>Navigate to contact page</button>
