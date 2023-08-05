@@ -12,13 +12,13 @@ const UseEffect=()=>{
     }
     useEffect(()=>{
         // alert('click')
-        document.title=`you times number is ${num}`
+        document.title=`times number is ${num}`
         ;
     },[num],[])
     return(<>
     <div>
-    <button onClick={ClickBTN}>Click me {num}</button>
-        <button onClick={ClickBtn}>Click me {numb}</button>
+    <button onClick={ClickBTN}>Click me & see title bar {num}</button>
+        <button onClick={ClickBtn}>Click me & see title bar {numb}</button>
     </div>
     </>)
 }

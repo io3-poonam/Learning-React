@@ -16,10 +16,10 @@ const Details = () => {
   return (
     <>
       <div className="container-fluid mt-5">
-        <div className="main-heading">
-          <h1 className="mb-5 text-center">
+        <div className="main-heading-1">
+          <h2 className="mb-5 text-center">
             <span className="font-weight-bold">India</span>  Database
-          </h1>
+          </h2>
         </div>
         <div className="table-responsive">
           <table className="table table-hover ">
