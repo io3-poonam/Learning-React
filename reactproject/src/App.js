@@ -24,7 +24,7 @@ import Pokemon from "./component/Pokemon/pokemon";
 const App = () => {
   return (
     <>
-    <Pokemon/>
+    
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />}></Route>
@@ -42,7 +42,7 @@ const App = () => {
           <Route path="counting number" element={<UseEffect />}></Route>
           <Route path="filter" element={<Filter />}></Route>
           <Route path="/cards" element={<MainCard />}></Route>
-
+<Route path="/pokemon" element={<Pokemon/>}></Route>
           <Route path="ComponentName" element={<MainComp />}></Route>
           <Route path="LiveProject" element={<Details />}></Route>
         </Routes>

@@ -52,6 +52,9 @@ navigate("name")
    const NavigateComponentNamePage=()=>{
     navigate("ComponentName")
    }
+   const NavigatePokemonPage=()=>{
+navigate("pokemon")
+   }
   return (
     <>
       <div className="">
@@ -78,7 +81,9 @@ navigate("name")
           <li onClick={NavigateToUseMapProject} className="nav-Items">Map Project</li>
           <li onClick={NavigateFilterPage} className="nav-Items">College Filter Page</li>
          <li onClick={NavigateComponentNamePage} className="nav-Items">Component Name</li>
-          <li onClick={NavigateToUseEffectPage} className="nav-Items">UseEffect Page</li>
+         
+         <li onClick={NavigateToUseEffectPage} className="nav-Items">UseEffect Page</li>
+          <li onClick={NavigatePokemonPage} className="nav-Items">Pokemon Page</li>
         </ul>
   
     

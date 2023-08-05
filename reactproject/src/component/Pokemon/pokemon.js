@@ -27,15 +27,8 @@ const Pokemon = () => {
   });
   return (
     <>
-      <h1>You choose {number} value</h1>
-      <h1>My name is {name}</h1>
-      <h1>{name} move are {moves}</h1>
-      {/* <h1>my move are {result}</h1> */}
-
-      {/* {data.map((itemData,indexData)=>{ */}
-      {/* // return (<h1>{itemData.name}</h1>) */}
-      {/* })} */}
-      <select
+    <div style={{textAlign:"center"}}>
+      <select style={{width:"4rem"}}
         value={number}
         onChange={(event) => {
           setNumber(event.target.value);
@@ -69,6 +62,15 @@ const Pokemon = () => {
         <option value="25">25</option>
         <option value="26">26</option>
       </select>
+      <h1>You choose <span style={{color:"red"}}> {number}</span> value</h1>
+      <h1>My name is  <span style={{color:"red"}}>{name}</span></h1>
+      <h1><span style={{color:"red"}}> {name}</span> move are <span style={{color:"red"}}> {moves}</span></h1>
+      {/* <h1>my move are {result}</h1> */}
+
+      {/* {data.map((itemData,indexData)=>{ */}
+      {/* // return (<h1>{itemData.name}</h1>) */}
+      {/* })} */}
+      </div>
     </>
   );
 };
