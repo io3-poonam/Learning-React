@@ -5,13 +5,14 @@
 }
 .Items{
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     border: 1px solid black;
     width: 100%;
     background-color: aliceblue;
 }
 .nav-Items{
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     cursor: pointer;
     margin: 0.5rem;
     border-radius: 2rem;

@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+}
+.count{
+    background-color: cadetblue;
+    width: 40%;
+    margin: 5% auto;
+    border-radius: 15px;
+}
+h1{
+    text-align: center;
+    padding: 2rem;
+}
+    .btn_count
+    {
+        width: 35%;
+        padding: 6px;
+        margin: 5px 45px;
+        border-radius: 5px;
+        border: none;
+        font-size: 20px;
+    }
+    .btn-clear{
+        margin: 2rem 0rem 2rem 13rem;
+    }
+    button{
+        padding: 5px;
+        margin: 5px 20px;
+    }
