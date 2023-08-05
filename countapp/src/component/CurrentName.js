@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './current.css';
 
-const CurrentDate=()=>{
+const CurrentName=()=>{
     const [show,setShow]=useState(false);
     const [changeBtnName,setChangeBtnName]=useState('Check');
 
@@ -33,4 +33,4 @@ const CurrentDate=()=>{
     </div>
     </>)
 }
-export default CurrentDate;
+export default CurrentName;

@@ -69,19 +69,19 @@ const handleClear=()=>{
     return<>
     <div className="count">
         <h1>Count {count}</h1>
-        <button className="btn" onClick={handleIncrease}>Add 1</button>
-        <button className="btn" onClick={handleDecrease}>Less 1</button>
-        <button className="btn" onClick={handleFiveAdd}>Add 5</button>
-        <button className="btn" onClick={handleFiveLess}>Less 5</button> 
-        <button className="btn" onClick={handleTwentyFiveAdd}>Add 25</button>
-        <button className="btn" onClick={handleTwentyFiveLess}>Less 25</button> 
+        <button className="btn_count" onClick={handleIncrease}>Add 1</button>
+        <button className="btn_count" onClick={handleDecrease}>Less 1</button>
+        <button className="btn_count" onClick={handleFiveAdd}>Add 5</button>
+        <button className="btn_count" onClick={handleFiveLess}>Less 5</button> 
+        <button className="btn_count" onClick={handleTwentyFiveAdd}>Add 25</button>
+        <button className="btn_count" onClick={handleTwentyFiveLess}>Less 25</button> 
         {/* <button className="btn" onClick={handleIncrease}>Increase</button>
         <button className="btn" onClick={handleDecrease}>Decrease</button> 
         <button className="btn" onClick={handleIncrease}>Increase</button>
         <button className="btn" onClick={handleDecrease}>Decrease</button>  */}
-        <button className="btn" onClick={handleHundredAdd}>Add 100</button>
-        <button className="btn" onClick={handleHundredLess}>Less 100</button>
-        <button className="btn btn-clear" onClick={handleClear}>Clear</button>
+        <button className="btn_count" onClick={handleHundredAdd}>Add 100</button>
+        <button className="btn_count" onClick={handleHundredLess}>Less 100</button>
+        <button className="btn_count btn-clear" onClick={handleClear}>Clear</button>
 
     </div>
    
