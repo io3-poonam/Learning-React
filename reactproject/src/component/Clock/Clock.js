@@ -11,7 +11,7 @@ const Clock=()=>{
      setTimeN(Time)
         
     }
-
+console.log('j',CurrTime)
     const UpdateTime=()=>{
         // console.log('clock')// check click
  newTime=new Date(). toLocaleTimeString()

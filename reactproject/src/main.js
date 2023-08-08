@@ -1,6 +1,6 @@
 import React from "react";
 import "./main.css";
-import { useNavigate } from "react-router-dom";
+import {  Link, NavLink, useNavigate } from "react-router-dom";
 const Main = () => {
   const navigate = useNavigate();
   const NavigateToCountPage = () => {
@@ -59,8 +59,9 @@ navigate("pokemon")
     <>
       <div className="">
         <ul className="Items">
-          <li onClick={NavigateToCountPage} className="nav-Items">
-            Count
+     
+          <li onClick={NavigateToCountPage}  className="nav-Items">
+          <NavLink className="nav-Items-links" to="/count">  Count</NavLink>
           </li>
           <li onClick={NavigateToTodoPage} className="nav-Items">
             ToDo List
