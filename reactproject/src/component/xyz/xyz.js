@@ -1,12 +1,10 @@
 import React from "react";
-// import { NavLink } from "react-router-dom";
-// import Xyz from "./component/xyz/xyz";
-const Contact=()=> {
+import { NavLink } from "react-router-dom";
+const Xyz=()=> {
   return (
     <>
-    <h1>Hello, This is my Contact</h1>
-    {/* <Xyz/> */}
-    {/* <ul>
+    {/* <h1>Hello, This is my Contact</h1> */}
+    <ul>
         <li>
           <NavLink to="/">Home</NavLink>
         </li>
@@ -16,9 +14,9 @@ const Contact=()=> {
         <li>
           <NavLink to="/contact">Contact</NavLink>
         </li>
-      </ul> */}
+      </ul>
     </>
   );
 }
 
-export default Contact;
+export default Xyz;

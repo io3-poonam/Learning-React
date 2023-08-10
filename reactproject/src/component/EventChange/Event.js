@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './event.css';
+import Header from "../Header";
 const Events=()=>{
     let purple='#8e44ad';
 
@@ -35,6 +36,8 @@ const Events=()=>{
         
     // }
     return(<>
+    <Header/>
+
     <div className="events" style={{backgroundColor: bg}}>
     <button className="EventsButton" 
     // onMouseLeave={onMouseLeave} onMouseEnter={onMouseEnter} 

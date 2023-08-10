@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./liveProject.css";
+import Header from "../Header";
 const Details = () => {
     const [data,setData]=useState([]);
   const getData = async () => {
@@ -15,6 +16,8 @@ const Details = () => {
   }, []);
   return (
     <>
+    <Header/>
+    
       <div className="container-fluid mt-5">
         <div className="main-heading">
           <h1 className="mb-5 text-center">

@@ -1,24 +1,25 @@
-*{
-    box-sizing: border-box;
-    padding: 0%;
-    margin: 0%;
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
 }
-.Items{
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    border: 1px solid black;
-    width: 100%;
-    background-color: aliceblue;
+.Items {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  border: 1px solid black;
+  width: 100%;
+  background-color: aliceblue;
 }
-.nav-Items{
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    margin: 0.5rem;
-    border-radius: 2rem;
-    background-color: powderblue;
+.nav-Items {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin: 0.5rem;
+  border-radius: 2rem;
+  background-color: powderblue;
 }
-li .nav-Items-links{
-    text-decoration: none;
-    color: black;    background-color: powderblue;
+li .nav-Items-links {
+  text-decoration: none;
+  color: black;
+  background-color: powderblue;
 }

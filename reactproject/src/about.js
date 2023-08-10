@@ -1,10 +1,10 @@
 import React from "react";
 // import { NavLink } from "react-router-dom";
 // import Xyz from "./component/xyz/xyz";
-const Contact=()=> {
+const About=()=> {
   return (
     <>
-    <h1>Hello, This is my Contact</h1>
+    <h1>Hello, This is my About</h1>
     {/* <Xyz/> */}
     {/* <ul>
         <li>
@@ -21,4 +21,4 @@ const Contact=()=> {
   );
 }
 
-export default Contact;
+export default About;

@@ -1,5 +1,6 @@
 import React from "react";
 import './style.css';
+import Header from "../Header";
 const Challenge=()=>{
     let currDate=new Date().getHours();
     // currDate=currDate.getHours();
@@ -37,6 +38,8 @@ let Heading={}
         // console.log('greeting 1', greeting)
     }
     return(<>
+    <Header/>
+
     <div className="display-Background" style={displayBackground}>
     <h1 className="Heading" style={Heading}> <strong style={{color:"GrayText"}}>Hello Sir ,</strong> {greeting} </h1>
     </div></>)

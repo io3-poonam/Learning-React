@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import "./form.css"
+import "./form.css";
+import Header from "../Header";
 const Forms=()=>{
     // const name='Blank'
     const [fullName, setFullName]=useState({
@@ -33,6 +34,8 @@ return{
         
     }
     return(<>
+    <Header/>
+    
     <div className="dis-Background">
     <form onSubmit={onSubmit}>
      <h1 className="Heading-1">Hello,<span>{fullName.fName} {fullName.lName}</span>  </h1>

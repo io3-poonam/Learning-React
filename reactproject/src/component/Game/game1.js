@@ -1,8 +1,10 @@
 import React from "react";
 import Game from './game';
-
+import Header from "../Header";
 const Game1=()=>{
     return(<>
+    <Header/>
+    
      <h1 className='Heading_Game'>🎰 Welcome to slot Game machine 🎰</h1>
      <div className='slotGame'> 
      

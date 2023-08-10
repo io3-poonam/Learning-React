@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./shop.css";
-
+import Header from "../Header";
 import ListItems from "./listItems";
 const Shop = () => {
   const [inputItems, setInputItems] = useState("");
@@ -26,6 +26,7 @@ const Shop = () => {
   }
   return (
     <>
+    <Header/>
       <div className="main-div">
         <div className="container-1">
           <h1 className="heading_Shopping">ToDo Buy</h1>

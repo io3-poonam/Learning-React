@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import Header from "../Header";
 const Pokemon = () => {
   const [number, setNumber] = useState(1);
   // const[data,setData]=useState([]);
@@ -27,6 +28,8 @@ const Pokemon = () => {
   });
   return (
     <>
+    <Header/>
+
     <div style={{textAlign:"center"}}>
       <select style={{width:"4rem"}}
         value={number}

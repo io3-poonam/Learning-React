@@ -1,31 +1,45 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
-import Main from "./main";
-import Clock from "./component/Clock/Clock";
-import Shopping from "./component/Todo List/Shopping";
-import Forms from "./component/form/form";
-import Events from "./component/EventChange/Event";
-import Challenge from "./component/Times of day/TimesOfday";
-import Game1 from "./component/Game/game1";
-import GoogleKeepMain from "./component/KeepGoogle/googleKeepMain";
+import "./App.css"
+// import Main from "./main";
+// import Clock from "./component/Clock/Clock";
+// import Shopping from "./component/Todo List/Shopping";
+// import Forms from "./component/form/form";
+// import Events from "./component/EventChange/Event";
+// import Challenge from "./component/Times of day/TimesOfday";
+// import Game1 from "./component/Game/game1";
+// import GoogleKeepMain from "./component/KeepGoogle/googleKeepMain";
 import Error from "./Error";
-import Accordion from "./component/Accordion/Accordion";
-import Shop from "./component/deleteTodo/shop";
-import CountMain from "./component/Count/CountMain";
-import MainName from "./component/NameSection/mainName";
-import UseEffect from "./component/UseEffect/UseEffect";
-import Details from "./component/LiveProject/liveProject";
-import MainCard from "./component/projectInMap/mainCard";
+// import Accordion from "./component/Accordion/Accordion";
+// import Shop from "./component/deleteTodo/shop";
+// import CountMain from "./component/Count/CountMain";
+// import MainName from "./component/NameSection/mainName";
+// import UseEffect from "./component/UseEffect/UseEffect";
+// import Details from "./component/LiveProject/liveProject";
+// import MainCard from "./component/projectInMap/mainCard";
 // import CompA from"./component/componentPrChild/CompA"
 // import MainComp from "./component/componentPrChild/Main-comp";
-import Filter from "./component/projectInMap/fillter";
-import MainComp from "./component/componentPrChild/Main-comp";
-import Pokemon from "./component/Pokemon/pokemon";
+// import Filter from "./component/projectInMap/fillter";
+// import MainComp from "./component/componentPrChild/Main-comp";
+// import Pokemon from "./component/Pokemon/pokemon";
+import Contact from "./contact";
+import About from "./about";
+import Home from "./home";
 const App = () => {
   return (
     <>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home/>}>
+              <Route path="/about" element={<About/>}/>
+              <Route path="/contact" element={<Contact/>}/>
+              <Route path="*" element={<Error/>}/>
+</Route>
+
+    </Routes>
+    </BrowserRouter>
     
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />}></Route>
           <Route path="/count" element={<CountMain />}></Route>
@@ -45,8 +59,10 @@ const App = () => {
 <Route path="/pokemon" element={<Pokemon/>}></Route>
           <Route path="ComponentName" element={<MainComp />}></Route>
           <Route path="LiveProject" element={<Details />}></Route>
+          <Route path="*" element={<Error />}></Route>
+
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </>
   );
 };

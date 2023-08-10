@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Header from "../Header";
 const UseEffect=()=>{
     const[num,setNum]=useState(0)
     const[numb,setNumb]=useState(0)
@@ -16,6 +17,8 @@ const UseEffect=()=>{
         ;
     },[num],[])
     return(<>
+    <Header/>
+
     <div>
     <button onClick={ClickBTN}>Click me & see title bars {num}</button>
         <button onClick={ClickBtn}>Click me & not Effect in title bar {numb}</button>

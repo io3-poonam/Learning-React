@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./shopping.css";
 // import AddIcon from '@mui/icons-material/Add';
-
+import Header from "../Header";
 import List from "./list";
 const Shopping = () => {
   const [inputItems, setInputItems] = useState("");
@@ -26,6 +26,8 @@ const Shopping = () => {
   }
   return (
     <>
+    <Header/>
+
       <div className="main-div">
         <div className="container-1">
           <h1 className="heading_Shopping">ToDo Buy</h1>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './clock.css';
+import Header from "../Header";
 const Clock=()=>{
     let Time=new Date().toLocaleTimeString()
     let newTime=new Date(). toLocaleTimeString()
@@ -22,6 +23,7 @@ console.log('j',CurrTime)
 setInterval(UpdateTime,1000) 
 
     return(<>
+    <Header/>
     <div className="clockButton">
     <h1 className="clockHea?ding">Current Time : {cTime}</h1>
     <button className="clockBtn" onClick={click}>Get Time</button>
