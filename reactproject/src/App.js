@@ -25,12 +25,15 @@ import Error from "./Error";
 import Contact from "./contact";
 import About from "./about";
 import Home from "./home";
+import MainNav from "./mainNav";
 const App = () => {
   return (
     <>
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Home/>}>
+      <Route path="/" element={<MainNav/>}>
+      <Route index element={<Home/>}/>
+
               <Route path="/about" element={<About/>}/>
               <Route path="/contact" element={<Contact/>}/>
               <Route path="*" element={<Error/>}/>
