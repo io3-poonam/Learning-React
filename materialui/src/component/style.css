@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.main-note{
+    width: 75%;
+    padding: 15px 10px 5px 10px;
+    margin: 20px auto;
+
+  }
+.form {    background-color: rgb(238, 242, 241);
+  min-height: 50px;
+  color: #090909;
+  padding: 15px 10px 5px 10px;
+  box-shadow: 3px 5px 15px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.heading-div,.main-heading {
+  padding: 1%;
+  text-align: center;
+}
+.heading-two {
+  padding: 1;
+}
