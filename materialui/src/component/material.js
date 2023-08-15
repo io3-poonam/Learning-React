@@ -20,6 +20,7 @@ export default function ResponsiveDialog() {
     ApplicationNumber: "",
     Email:""
   });
+  const [newInput, setNewInput] = useState({});
   const [showHide, setShowHide] = useState(false);
 
   const theme = useTheme();
@@ -36,16 +37,11 @@ export default function ResponsiveDialog() {
   };
   const handleSubmit = () => {
     setOpen(false);
-    setEmptyInput({
-      Name: "",
-      Password: "",
-      Number: "",
-      ApplicationNumber: "",
-      Email:""
-    });
+    setNewInput({...emptyInput});
     console.log("m");
     setShowHide(true);
   };
+  console.log("NewInput",newInput)
   const handleOnChange = (event) => {
     setInput(input);
     const { name, value } = event.target;
@@ -68,20 +64,20 @@ export default function ResponsiveDialog() {
       {showHide ? (
         <div className="form">
           
-          <h1 className="main-heading"> Candidate Registration Successful </h1>
+          <h1 className="main-heading"> Candidate     {newInput.Name} Registration Successful </h1>
           <div className="heading-div">
             <h2 className="heading-two" >
               our Registration details are Saved, Your Login Details has been
               emailed To your Registered Email ID:
-              {/* {emptyInput.Email} */}
-              com /SMS to Registered Mobile No:
-              {/* {emptyInput.Number} */}
+              {newInput.Email}
+             SMS to Registered Mobile No:
+              {newInput.Number}
             </h2>
             <h2 className="heading-two">Kindly Check Spam/Junk folder also.</h2>
             <h2 className="heading-two">
               Please Login to Complete your Online Application Form. Kindly Note
               your Application Number:
-              {/* {emptyInput.ApplicationNumber} */}
+              {newInput.ApplicationNumber}
             </h2>
             <Button variant="outlined" 
             // onClick={(pd)=>HandleBtnClick1(pd)}
