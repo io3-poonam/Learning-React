@@ -10,6 +10,7 @@ Navigate("/contact")
   return (
     <>
     <h1>Hello, This is my About</h1>
+    
     <button onClick={()=>goToContact()}>Contact Page</button>
     <button onClick={()=>Navigate(-1)}>Go Back</button>
 

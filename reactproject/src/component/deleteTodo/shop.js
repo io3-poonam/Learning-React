@@ -10,19 +10,20 @@ const Shop = () => {
     setInputItems(eventItems.target.value);
   };
   const handleClickButtonList = () => {
+    if(inputItems){
     setNewList((oldItems) => {
       return [...oldItems, inputItems];
-    });
+    });}
     setInputItems("");
   };
 
   const HandleDelete=(id)=>{
     // console.log('hhh')
-    setNewList((oldItems=>{
+    setNewList((oldItems)=>{
       return(oldItems.filter((arrId,i)=>{
         return i !== id
       }))
-    })) 
+    })
   }
   return (
     <>
