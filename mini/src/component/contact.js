@@ -1,6 +1,6 @@
 import React from "react";
-import Events from "./Events";
-import Clock from "./clock";
+import Events from "../Events";
+import Clock from "../clock";
 import { useNavigate } from "react-router-dom";
 
 const Contact = () => {

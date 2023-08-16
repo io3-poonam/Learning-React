@@ -1,6 +1,6 @@
 import React from "react";
 const Error=()=>{
     return(<>
-    Error page</>)
+   <h1>OOps Error Page is not Found</h1></>)
 }
 export default Error;

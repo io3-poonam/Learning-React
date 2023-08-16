@@ -5,7 +5,7 @@
   }
   .todo_style{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: column; */
   }
   .todo_style .btn{
     width: 25px;
@@ -36,6 +36,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
   .button{
     margin-left: 5px;

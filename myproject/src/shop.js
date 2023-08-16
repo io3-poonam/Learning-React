@@ -6,7 +6,7 @@ import List from "./list";
 const Shopping = () => {
   const [inputItems, setInputItems] = useState("");
   const [newList, setNewList] = useState([]);
-
+console.log("inputItems",inputItems,newList)
   const handleChangeEventListItems = (eventItems) => {
     setInputItems(eventItems.target.value);
   };
