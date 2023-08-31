@@ -43,32 +43,32 @@ return{
      <p>{fullName.quali}</p>  
      <p>{fullName.email}</p>  
      <p>{fullName.number} </p>
-   <input type="text" 
+   <input  id="input_box" type="text" 
     name="fName"
     placeholder="Enter your First Name"
     onChange={onChange} value={fullName.fName} />
     <br/>
-   <input type="text" 
+   <input  id="input_box" type="text" 
     name="lName"
     placeholder="Enter Your Last Name"
     onChange={onChange} value={fullName.lName} />
     <br/>
-    <input type="text" 
+    <input  id="input_box" type="text" 
     name="age"
     placeholder="Enter Your Age"
     onChange={onChange} value={fullName.age} />
-    <input type="text" 
+    <input id="input_box"  type="text" 
     name="quali"
     placeholder="Enter Your qualification"
     onChange={onChange} value={fullName.quali} />
     <br/>
-   <input type="email" 
+   <input  id="input_box" type="email" 
     name="email"
     placeholder="Enter the email"
     autoComplete="off"
     onChange={onChange} value={fullName.email} />
     <br/>
-   <input type="number" 
+   <input  id="input_box" type="number" 
     autoComplete="off"
     name="number"
     placeholder="Enter the number"

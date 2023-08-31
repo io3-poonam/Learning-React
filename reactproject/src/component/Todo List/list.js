@@ -14,7 +14,7 @@ setLine(true)
       <div className="todo_style">
         <button className="btn" onClick={clickList}>➖</button>
         <li className="list_items" 
-        // style={{textDecoration:line?"line-through":'none'}}
+        style={{textDecoration:line?"line-through":'none'}}
         >{text}</li>
       </div>
     </>
