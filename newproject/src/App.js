@@ -1,17 +1,20 @@
 import React from 'react';
 import './App.css';
-import NavbarApp from './component/Navbar';
+// import NavbarApp from './component/Navbar';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import { Routes,Route } from 'react-router-dom';
 import Home from './component/Home';
 import About from './component/About';
 import Services from './component/Services';
 import Contact from './component/Contact';
 import Error from './component/Error';
+import Header from './component/Header';
 function App() {
   return (
     <>
    
-<NavbarApp/>
+{/* <NavbarApp/> */}
+<Header/>
     <Routes>
       {/* <Route path='/' element={<Menu/>}> */}
       <Route path='/home' element={<Home/>}></Route>
