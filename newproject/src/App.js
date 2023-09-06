@@ -9,6 +9,7 @@ import Services from './component/Services';
 import Contact from './component/Contact';
 import Error from './component/Error';
 import Header from './component/Header';
+import Footer from './component/Footer';
 function App() {
   return (
     <>
@@ -24,7 +25,7 @@ function App() {
       <Route path="*" element={<Error />}></Route>
 
     </Routes>
-
+<Footer/>
     </>
   );
 }

@@ -11,6 +11,7 @@ const Contact = () => {
     State: "",
     City: "",
   });
+  const [show,setShow]=useState(false)
   console.log("data", data);
   const inputEvent = (event) => {
     const { name, value } = event.target;
@@ -22,6 +23,10 @@ const Contact = () => {
     e.preventDefault()
     alert(`my name is ${data.Name} My email is ${data.Email} & Mobile number is ${data.State}, and City is ${data.City} all data are correct`)
   };
+  const handleSubmit=()=>{
+    setShow(true);
+
+  }
   return (
     <>
       <div className="my-5">
@@ -29,7 +34,8 @@ const Contact = () => {
       </div>
       <div className="container">
         <div className="row">
-          <div className="col-md-6 col-10 mx-auto">
+         <div className="col-md-6 col-10 mx-auto">
+         {show?( <p>My name is {data.Name} My email is {data.Email} & Mobile number is {data.State}, and City is {data.City} all data are correct</p>):null}
             <Form onSubmit={HandelSubmitForm}>
               <Form.Group className="mb-3" as={Col} controlId="formGridEmail">
                 <Form.Label>Email</Form.Label>
@@ -114,7 +120,7 @@ const Contact = () => {
                 />
               </Form.Group>
 
-              <Button variant="outline-primary" type="submit">
+              <Button variant="outline-primary" onClick={handleSubmit} type="submit">
                 Submit
               </Button>
             </Form>

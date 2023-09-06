@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 const SameProps = (props) => {
   return (
     <>
-      <section className=" Headers d-flex align-items-center">
+      <section className=" Headers d-flex align-items-center " >
         <div className="container-fluid mt-5">
           <div className="row">
             <div className="col-10 mx-auto">
