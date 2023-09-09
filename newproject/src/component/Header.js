@@ -17,7 +17,9 @@ const Header = () => {
   const HandleContact = () => {
     navigate("/Contact");
   };
-
+const HandleOtherExtraPart=()=>{
+  navigate("/OtherExtraPart");
+}
   return (
     <>
       <Navbar expand="lg" className="bg-body-tertiary sticky-top">
@@ -33,6 +35,8 @@ const Header = () => {
               <Nav.Link className="nav-link active" to={"/Home"} onClick={HandleHome}>
                 Home
               </Nav.Link>
+              <Nav.Link className="nav-link active" to={"/OtherExtraPart"} onClick={HandleOtherExtraPart}>Other Extra Part
+</Nav.Link>
               <Nav.Link className="nav-link active" to={"/About"} onClick={HandleAbout}>
                 About
               </Nav.Link>

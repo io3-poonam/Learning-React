@@ -37,7 +37,7 @@ return(<>
 <div>
 <h1> my age is {age}</h1>
 <h1>my city is {city}</h1>
-<input type="text" placeholder="set age query" onChange={(e)=>{onChange}}/>
+<input type="text" placeholder="set age query"  onChange={(event)=>setSearchParams({color:event.target.value,age:50})}/>
 <button className="btnBtn" onClick={handleClick}>submit</button></div>
     {/* <h1>count Location is <span style={{color:"red"}}>{Location.pathname}</span></h1>
     <h1>count Location key is <span style={{color:"red"}}> {Location.key}</span></h1>

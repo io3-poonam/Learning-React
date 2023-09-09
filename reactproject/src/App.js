@@ -29,18 +29,25 @@ import MainNav from "./mainNav";
 const App = () => {
   return (
     <>
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainNav />}>
-            <Route path="/" element={<Home />}/>
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact/>}/>
-            <Route path="*" element={<Error />} />
+          <Route path="/" element={<MainNav />}></Route>
+          <Route path="/" element={<Home />}>
+      
+          </Route>
+          <Route path="/about" element={<About />}>
+
+          </Route>
+          <Route path="/contact" element={<Contact />}>
+ 
+          </Route>
+          <Route path="*" element={<Error />}>
+        
           </Route>
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
 
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />}></Route>
           <Route path="/count" element={<CountMain />}></Route>
@@ -63,7 +70,7 @@ const App = () => {
           <Route path="*" element={<Error />}></Route>
 
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </>
   );
 };
